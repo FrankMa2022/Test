@@ -26,6 +26,8 @@
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
       <x:String>System.Collections.ObjectModel</x:String>
       <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -49,9 +51,10 @@
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="序列" sap:VirtualizedContainerService.HintSize="375.2,161.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="序列" sap:VirtualizedContainerService.HintSize="375.2,324" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -79,5 +82,6 @@
         </ui:Target>
       </ui:Click.Target>
     </ui:Click>
+    <ui:ElementAttributeChangeTrigger AttributeName="{x:Null}" Selector="{x:Null}" DisplayName="元素属性更改触发器" sap:VirtualizedContainerService.HintSize="333.6,122.4" sap2010:WorkflowViewState.IdRef="ElementAttributeChangeTrigger_1" />
   </Sequence>
 </Activity>
